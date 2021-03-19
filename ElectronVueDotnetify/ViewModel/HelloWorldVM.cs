@@ -37,6 +37,8 @@ namespace ElectronVueDotnetify.ViewModel
 
         public override void Dispose() => _timer.Dispose();
 
+        // from HelloWorld.vue
+        // this.vm.$dispatch({ ButtonClicked: true });
         public void ButtonClicked(bool args1)
         {
             ClickCount++;
