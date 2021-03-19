@@ -5,7 +5,7 @@
       <h3>{{ Greetings }}</h3>
       <p>Server time is: {{ ServerTime }}</p>
       <button class="btn btn-secondary" type="button" @click="onButtonClick">Click me</button>
-          <span style="margin-left: 2rem">
+      <span style="margin-left: 2rem">
             You clicked me
             <b>{{ ClickCount }}</b> times!
       </span>
