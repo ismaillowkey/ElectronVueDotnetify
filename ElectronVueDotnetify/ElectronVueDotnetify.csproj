@@ -8,13 +8,13 @@
     <DefaultItemExcludes>$(DefaultItemExcludes);$(SpaRoot)node_modules\**</DefaultItemExcludes>
     <!-- Set this to true if you enable server-side prerendering -->
     <BuildServerSideRenderer>false</BuildServerSideRenderer>
+    <UserSecretsId>ea4c87d0-71a5-470b-ae9f-a7d171180ec3</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DotNetify.SignalR" Version="4.1.1" />
     <PackageReference Include="ElectronNET.API" Version="11.5.1" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
     <PackageReference Include="Nyami.AspNetCore.VueCliServices" Version="3.1.2" />
-    <PackageReference Include="VueCliMiddleware" Version="5.0.0" />
   </ItemGroup>
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->

@@ -50,13 +50,6 @@ namespace ElectronVueDotnetify
                 app.UseHsts();
             }
 
-            
-            // app.UseCors(builder => builder
-            //     .AllowAnyMethod()
-            //     .AllowAnyHeader()
-            //     .WithOrigins("http://localhost:8080")
-            //     .AllowCredentials());
-
             app.UseWebSockets();
             app.UseDotNetify();
             // .NET Core 3.x or NET 5:
