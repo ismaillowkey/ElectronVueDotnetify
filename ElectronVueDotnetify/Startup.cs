@@ -32,7 +32,7 @@ namespace ElectronVueDotnetify
             // In production, the Vue files will be served from this directory
             services.AddSpaStaticFiles(configuration =>
             {
-                configuration.RootPath = "ClientApp/dist";
+                configuration.RootPath = "clientapp/dist";
             });
         }
 
@@ -72,7 +72,7 @@ namespace ElectronVueDotnetify
                 // To learn more about options for serving an Angular SPA from ASP.NET Core,
                 // see https://go.microsoft.com/fwlink/?linkid=864501
 
-                spa.Options.SourcePath = "ClientApp";   
+                spa.Options.SourcePath = "clientapp";   
                 if (env.IsDevelopment())
                 {
                     //spa.UseAngularCliServer(npmScript: "start");
