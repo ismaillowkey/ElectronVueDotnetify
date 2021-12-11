@@ -14,17 +14,11 @@
 </template>
 
 <script>
-import Vue from 'vue';
+import { defineComponent } from 'vue';
 import dotnetify from 'dotnetify/vue';
 
-export default Vue.extend({
+export default defineComponent({
   name: 'HelloWorld',
-  created() {
-    this.vm = dotnetify.vue.connect("HelloWorldVM", this, { watch: [] });
-  },
-  destroyed() {
-    this.vm.$destroy();
-  },
   data() {
     return {
       msg: "tes dotnetify",
@@ -33,14 +27,20 @@ export default Vue.extend({
       ClickCount: Number
     }
   },
+  // props: {
+  //   msg: String,
+  // },
+  created() {
+    this.vm = dotnetify.vue.connect("HelloWorldVM", this, { watch: [] });
+  },
+  unmounted() {
+    this.vm.$destroy();
+  },
   methods : {
     onButtonClick() {
       this.vm.$dispatch({ ButtonClicked: true });
     }
   }
-})
+});
 </script>
 
-<style scoped>
-h3 { font-weight: 500; }
-</style>

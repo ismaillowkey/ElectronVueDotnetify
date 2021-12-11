@@ -1,4 +1,4 @@
-# ElectronVueDotnetify
+# clientapp
 
 ## Project setup
 ```
